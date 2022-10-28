@@ -19,6 +19,7 @@ public class K6TestController {
         //1.封装返回结构
         JSONObject result = param;
         result.set("result", headerParam);
+        result.set("result11111", headerParam);
 
         //2.返回
         return result;
