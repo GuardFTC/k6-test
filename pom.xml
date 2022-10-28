@@ -41,7 +41,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!--Lombok依赖-->
+        <!--Hutool依赖-->
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
