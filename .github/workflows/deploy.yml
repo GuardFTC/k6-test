@@ -1,0 +1,14 @@
+name: deploy-server-jar
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: test_echo
+        run: echo 11111111
