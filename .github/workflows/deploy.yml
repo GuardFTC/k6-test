@@ -1,14 +1,22 @@
+# 任务名称
 name: deploy-server-jar
 
+#提交到哪个分支，触发任务
 on:
   push:
     branches:
       - master
 
+#任务详情
 jobs:
+
+  #job名称
   build:
+
+    #使用哪个runner获取job并执行
     runs-on: self-hosted
 
+    #任务步骤
     steps:
       - name: echo dir
         run: dir=`pwd` && echo $dir
@@ -17,4 +25,6 @@ jobs:
       - name: build project
         run: mvn clean package -Dmaven.test.skip=true
       - name: move to work dir
-        run: cd ./target && mv test-k6-0.0.1-SNAPSHOT.jar /data/k6-test
+        run: cd ./target && mv test-k6-0.0.1-SNAPSHOT.jar /data/k6-test/server
+      - name: deploy
+        run: supervisorctl restart k6-test
