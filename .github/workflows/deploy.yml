@@ -12,9 +12,9 @@ jobs:
     steps:
       - name: echo dir
         run: dir=`pwd` && echo $dir
-      - name: pull code
-        run: git pull origin master
-      - name: build project
-        run: mvn clean package -Dmaven.test.skip=true
-      - name: move to work dir
-        run: cd ./target && mv test-k6-0.0.1-SNAPSHOT.jar /data/k6-test
+#      - name: pull code
+#        run: git pull origin master
+#      - name: build project
+#        run: mvn clean package -Dmaven.test.skip=true
+#      - name: move to work dir
+#        run: cd ./target && mv test-k6-0.0.1-SNAPSHOT.jar /data/k6-test
