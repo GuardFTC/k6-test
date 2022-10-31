@@ -65,7 +65,7 @@ export default function () {
 export let postTest = function () {
 
     //1.定义URL以及请求参数
-    let url = 'http://192.168.43.66:6666/api/v1/rest/k6tests';
+    let url = 'http://localhost:6666/api/v1/rest/k6tests';
     let payload = JSON.stringify({
         'method': 'post'
     });
@@ -95,7 +95,7 @@ export let postTest = function () {
 export let deleteTest = function () {
 
     //1.定义URL以及请求参数
-    let url = 'http://192.168.43.66:6666/api/v1/rest/k6tests';
+    let url = 'http://localhost:6666/api/v1/rest/k6tests';
     let payload = JSON.stringify({
         'method': 'delete'
     });
@@ -125,7 +125,7 @@ export let deleteTest = function () {
 export let putTest = function () {
 
     //1.定义URL以及请求参数
-    let url = 'http://192.168.43.66:6666/api/v1/rest/k6tests';
+    let url = 'http://localhost:6666/api/v1/rest/k6tests';
     let payload = JSON.stringify({
         'method': 'put'
     });
@@ -155,7 +155,7 @@ export let putTest = function () {
 export let patchTest = function () {
 
     //1.定义URL以及请求参数
-    let url = 'http://192.168.43.66:6666/api/v1/rest/k6tests';
+    let url = 'http://localhost:6666/api/v1/rest/k6tests';
     let payload = JSON.stringify({
         'method': 'patch'
     });
@@ -185,7 +185,7 @@ export let patchTest = function () {
 export let getTestParam = function () {
 
     //1.发送请求
-    let res = http.get("http://192.168.43.66:6666/api/v1/rest/k6tests?param=1");
+    let res = http.get("http://localhost:6666/api/v1/rest/k6tests?param=1");
 
     //2.校验结果
     check(res, {
@@ -200,7 +200,7 @@ export let getTestParam = function () {
 export let getPathParamTest = function () {
 
     //1.发送请求
-    let res = http.get("http://192.168.43.66:6666/api/v1/rest/k6tests/2");
+    let res = http.get("http://localhost:6666/api/v1/rest/k6tests/2");
 
     //2.校验结果
     check(res, {

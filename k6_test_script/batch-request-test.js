@@ -36,7 +36,7 @@ export let batchRequest = function () {
     //1.定义POST请求
     const postRequest = {
         method: 'POST',
-        url: 'http://192.168.43.66:6666/api/v1/rest/k6tests',
+        url: 'http://localhost:6666/api/v1/rest/k6tests',
         body: JSON.stringify({
             'method': 'post'
         }),
@@ -51,7 +51,7 @@ export let batchRequest = function () {
     //2.定义DELETE请求
     const deleteRequest = {
         method: 'DELETE',
-        url: 'http://192.168.43.66:6666/api/v1/rest/k6tests',
+        url: 'http://localhost:6666/api/v1/rest/k6tests',
         body: JSON.stringify({
             'method': 'delete'
         }),
@@ -66,7 +66,7 @@ export let batchRequest = function () {
     //3.定义PUT请求
     const putRequest = {
         method: 'PUT',
-        url: 'http://192.168.43.66:6666/api/v1/rest/k6tests',
+        url: 'http://localhost:6666/api/v1/rest/k6tests',
         body: JSON.stringify({
             'method': 'put'
         }),
@@ -81,7 +81,7 @@ export let batchRequest = function () {
     //4.定义PUT请求
     const patchRequest = {
         method: 'PATCH',
-        url: 'http://192.168.43.66:6666/api/v1/rest/k6tests',
+        url: 'http://localhost:6666/api/v1/rest/k6tests',
         body: JSON.stringify({
             'method': 'patch'
         }),
@@ -96,13 +96,13 @@ export let batchRequest = function () {
     //5.定义URL参数GET请求
     const getUrlParamRequest = {
         method: 'GET',
-        url: 'http://192.168.43.66:6666/api/v1/rest/k6tests?param=1',
+        url: 'http://localhost:6666/api/v1/rest/k6tests?param=1',
     };
 
     //6.定义路径参数GET请求
     const getPathParamRequest = {
         method: 'GET',
-        url: 'http://192.168.43.66:6666/api/v1/rest/k6tests/2',
+        url: 'http://localhost:6666/api/v1/rest/k6tests/2',
     };
 
     //7.批处理发送请求

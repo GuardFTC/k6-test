@@ -31,7 +31,7 @@ export default function () {
 export let getTestParam = function () {
 
     //1.发送请求
-    let res = http.get("http://192.168.43.66:6666/api/v1/rest/k6tests?param=1");
+    let res = http.get("http://localhost:6666/api/v1/rest/k6tests?param=1");
 
     //2.校验结果
     check(res, {
